@@ -1,0 +1,306 @@
+<html>
+
+<head>
+    <title>Parkwithease Dashboard</title>
+
+    <!DOCTYPE html>
+    <html>
+
+    <head>
+        <style>
+            body {
+                font-family: 'Roboto', sans-serif;
+                margin: 20px;
+                background-size: cover;
+                background-image: url(stats-bg.jpg);
+                background-position: center;
+                background-repeat: no-repeat;
+            }
+
+            h1 {
+                text-align: center;
+                color: wheat;
+                margin-bottom: 30px;
+                text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+            }
+
+            h2 {
+                margin-top: 30px;
+                color: #45a049;
+            }
+
+            table {
+                border-collapse: collapse;
+                width: 100%;
+                margin-bottom: 30px;
+            }
+
+            th,
+            td {
+                border: 1px solid #ddd;
+                padding: 12px;
+                text-align: left;
+            }
+
+            th {
+                background-color: #f9f9f9;
+                color: #45a049;
+            }
+
+            td {
+                color: #3b8e41;
+            }
+
+            .slot-number {
+                font-weight: bold;
+            }
+
+            .customer-info {
+                font-style: italic;
+            }
+
+            .form-container {
+                width: 400px;
+                margin: 0 auto;
+                border: 1px solid #ddd;
+                padding: 30px;
+                background-color: #fff;
+                border-radius: 4px;
+                box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+            }
+
+            .form-container label {
+                display: block;
+                margin-bottom: 10px;
+                color: #555;
+            }
+
+            .form-container input[type="text"],
+            .form-container select {
+                width: 100%;
+                padding: 10px;
+                margin-bottom: 10px;
+                border: 1px solid #ddd;
+                border-radius: 4px;
+            }
+
+            .form-container button {
+                background-color: #4CAF50;
+                color: #fff;
+                border: none;
+                padding: 12px 20px;
+                cursor: pointer;
+                border-radius: 4px;
+                transition: background-color 0.3s ease;
+            }
+
+            .form-container button:hover {
+                background-color: #45a049;
+            }
+
+            /* Additional CSS */
+            .form-container input[type="text"]:focus,
+            .form-container select:focus {
+                outline: none;
+                border-color: #6bb8e3;
+                box-shadow: 0 0 6px #6bb8e3;
+            }
+
+            .form-container button[type="submit"] {
+                width: 100%;
+                font-size: 16px;
+                font-weight: bold;
+                text-transform: uppercase;
+                letter-spacing: 1px;
+                margin-top: 5px;
+
+            }
+
+            .form-container button[type="submit"] {
+                background-color: red;
+            }
+
+            .form-container button[type="submit"]:hover {
+                background-color: #3b8e41;
+            }
+
+            /* Styling for table rows */
+            .reserved-slot-row {
+                background-color: #fff;
+            }
+
+            .reserved-slot-row:nth-child(odd) {
+                background-color: #f9f9f9;
+            }
+
+            .reserved-slot-row:hover {
+                background-color: #f5f5f5;
+            }
+
+            .reserved-slot-row td {
+                padding: 12px 10px;
+            }
+        </style>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+
+    </head>
+
+<body>
+    <h1><img src="./logo-no-background.png"></h1>
+
+    <h2>Available Slots</h2>
+    <table>
+        <thead>
+            <tr>
+                <th>Slot Number</th>
+                <th>Available</th>
+            </tr>
+        </thead>
+        <tbody id="availableSlotsTable">
+            <!-- Available slots will be dynamically added here -->
+        </tbody>
+    </table>
+
+    <h2>Reserved Slots</h2>
+    <table>
+        <thead>
+            <tr>
+                <th>Slot Number</th>
+                <th>Customer Name</th>
+                <th>Vehicle Number</th>
+            </tr>
+        </thead>
+        <tbody id="reservedSlotsTable">
+            <!-- Reserved slots and customer information will be dynamically added here -->
+        </tbody>
+    </table>
+
+    <div class="form-container">
+        <h2>Make an Appointment</h2>
+        <form id="appointmentForm">
+            <label for="customerName">Customer Name</label>
+            <input type="text" id="customerName" name="customerName" required>
+
+            <label for="vehicleNumber">Vehicle Number</label>
+            <input type="text" id="vehicleNumber" name="vehicleNumber" required>
+
+            <label for="timeSlot">Time Slot</label>
+            <select id="timeSlot" name="timeSlot" required>
+                <option value="">Select a time slot</option>
+                <option value="9AM-10AM">9AM -
+
+                    10AM</option>
+                <option value="10AM-11AM">10AM - 11AM</option>
+                <option value="11AM-12PM">11AM - 12PM</option>
+                <!-- Add more time slots here -->
+            </select>
+
+            <button type="submit">Submit</button>
+            <button type="submit">Payment</button>
+        </form>
+    </div>
+    <div class="mapouter">
+        <div class="gmap_canvas"><iframe class="gmap_iframe" width="100%" frameborder="0" scrolling="no"
+                marginheight="0" marginwidth="0"
+                src="https://maps.google.com/maps?width=721&amp;height=400&amp;hl=en&amp;q=car parking ahmedabad&amp;t=&amp;z=12&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"></iframe><a
+                href="https://gachanox.io/">Gacha Nox</a></div>
+        <style>
+            .mapouter {
+                position: relative;
+                text-align: right;
+                width: 100%;
+                height: 400px;
+            }
+
+            .gmap_canvas {
+                overflow: hidden;
+                background: none !important;
+                width: 100%;
+                height: 400px;
+            }
+
+            .gmap_iframe {
+                height: 400px !important;
+            }
+        </style>
+    </div>
+
+    <script>
+        // Example data (replace this with your own data)
+        var availableSlots = [
+            { slotNumber: "A1", available: true },
+            { slotNumber: "B3", available: true },
+            { slotNumber: "C2", available: true }
+        ];
+        var reservedSlots = [
+            { slotNumber: "D4", customerName: "John Doe", vehicleNumber: "ABC123" },
+            { slotNumber: "E2", customerName: "Jane Smith", vehicleNumber: "XYZ789" }
+        ];
+
+        // Function to populate the available slots table
+        function populateAvailableSlots() {
+            var table = document.getElementById("availableSlotsTable");
+            table.innerHTML = ""; // Clear existing data
+
+            for (var i = 0; i < availableSlots.length; i++) {
+                var row = table.insertRow();
+                var slotCell = row.insertCell();
+                slotCell.innerHTML = availableSlots[i].slotNumber;
+                var availableCell = row.insertCell();
+                availableCell.innerHTML = availableSlots[i].available ? "Yes" : "No";
+            }
+        }
+
+        // Function to populate the reserved slots table
+        function populateReservedSlots() {
+            var table = document.getElementById("reservedSlotsTable");
+            table.innerHTML = ""; // Clear existing data
+
+            for (var i = 0; i < reservedSlots.length; i++) {
+                var row = table.insertRow();
+                var slotCell = row.insertCell();
+                slotCell.innerHTML = reservedSlots[i].slotNumber;
+                var nameCell = row.insertCell();
+                nameCell.innerHTML = reservedSlots[i].customerName;
+                var vehicleCell = row.insertCell();
+                vehicleCell.innerHTML = reservedSlots[i].vehicleNumber;
+            }
+        }
+
+        // Function to handle form submission
+        function submitForm(event) {
+            event.preventDefault();
+
+            // Get form values
+            var customerName = document.getElementById("customerName").value;
+            var vehicleNumber = document.getElementById("vehicleNumber").value;
+            var timeSlot = document.getElementById("timeSlot").value;
+
+            // Add the new appointment to reserved slots
+            var newAppointment = {
+                slotNumber: timeSlot,
+                customerName: customerName,
+                vehicleNumber: vehicleNumber
+            };
+            reservedSlots.push(newAppointment);
+
+            // Clear the form inputs
+            document.getElementById("customerName").value = "";
+            document.getElementById("vehicleNumber").value = "";
+            document.getElementById("timeSlot").value = "";
+
+            // Update the reserved slots table
+            populateReservedSlots();
+        }
+
+        // Call the functions to populate the tables on page load
+        populateAvailableSlots();
+        populateReservedSlots();
+
+        // Add event listener to form submission
+        var form = document.getElementById("appointmentForm");
+        form.addEventListener("submit", submitForm);
+    </script>
+</body>
+
+</html>

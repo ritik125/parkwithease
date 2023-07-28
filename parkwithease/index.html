@@ -1,0 +1,919 @@
+
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- 
+    - primary meta tags
+  -->
+    <title>Parkwithease</title>
+    <meta name="title" content="Parkwithease">
+    <meta name="description" content="This is a website for the company Parkwithease">
+
+    <!-- 
+    - favicon
+  -->
+    <link rel="shortcut icon" href="./images/png/logo-black.png" type="image/svg+xml">
+
+    <!-- 
+    - google font link
+  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@500;700&display=swap" rel="stylesheet">
+
+    <!-- 
+    - custom css link
+  -->
+    <link rel="stylesheet" href="style.css">
+    <script src="js/script.js"></script>
+
+    <!-- 
+    - preload images
+  -->
+    <link rel="preload" as="image" href="home/images/pic-1.jpg">
+    <link rel="preload" as="image" href="home/images/pic-2.jpg">
+    <link rel="preload" as="image" href="home/images/pic-3.jpg">
+    <link rel="preload" as="image" href="home/images/pic-5.jpg">
+
+</head>
+
+<body>
+
+    <!-- 
+    - #HEADER
+  -->
+
+    <header class="header" data-header>
+        <div class="container">
+
+            <a href="#" class="logo">
+                <img src="images/png/logo-no-background.png" width="74" height="74" alt="home" class="logo-light">
+
+                <img src="images/png/logo-black.png" width="74" height="74" alt="home" class="logo-dark">
+            </a>
+
+            <nav class="navbar" data-navbar>
+
+                <div class="navbar-top">
+                    <a href="#" class="logo">
+                        <img src="images/png/logo-color.png" width="74" height="24" alt="home">
+                    </a>
+
+                    <button class="nav-close-btn" aria-label="close menu" data-nav-toggler>
+                        <ion-icon name="close-outline" aria-hidden="true"></ion-icon>
+                    </button>
+                </div>
+
+                <ul class="navbar-list">
+
+                    <li>
+                        <a href="#" class="navbar-link">Home</a>
+                    </li>
+
+                    <li>
+                        <a href="Login,signup/login.html" class="navbar-link">Login</a>
+                    </li>
+
+                    <li>
+                        <a href="Login,signup/signup.html" class="navbar-link">Signup</a>
+                    </li>
+
+                    <li>
+                        <a href="booking/desktest.html" class="navbar-link">Dashboard</a>
+                    </li>
+
+                    <li>
+                        <a href="#" class="navbar-link">Contact</a>
+                    </li>
+
+                </ul>
+
+                <div class="wrapper">
+                    <a href="mailto:parkwithease@gmail.com" class="contact-link">parkwithease@gmail.com</a>
+
+                    <a href="tel:001234567890" class="contact-link">9574807544</a>
+                </div>
+
+                <ul class="social-list">
+
+                    <li>
+                        <a href="#" class="social-link">
+                            <ion-icon name="logo-twitter"></ion-icon>
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#" class="social-link">
+                            <ion-icon name="logo-facebook"></ion-icon>
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#" class="social-link">
+                            <ion-icon name="logo-dribbble"></ion-icon>
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#" class="social-link">
+                            <ion-icon name="logo-instagram"></ion-icon>
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#" class="social-link">
+                            <ion-icon name="logo-youtube"></ion-icon>
+                        </a>
+                    </li>
+
+                </ul>
+
+            </nav>
+
+            <a href="Login,signup/signup.html" class="btn btn-primary">Try now</a>
+
+            <button class="nav-open-btn" aria-label="open menu" data-nav-toggler>
+                <ion-icon name="menu-outline" aria-hidden="true"></ion-icon>
+            </button>
+
+            <div class="overlay" data-nav-toggler data-overlay></div>
+
+        </div>
+    </header>
+
+
+
+
+
+    <main>
+        <article>
+
+            <!-- 
+        - #HERO
+      -->
+
+            <section class="section hero has-bg-image" aria-label="home"
+                style="background-image: url('home/images/background.jpg')">
+                <div class="container">
+
+                    <div class="hero-content">
+
+                        <h1 class="h1 hero-title">Easing your parking problems with expertise.</h1>
+
+                        <p class="hero-text">
+                            We’re a creative company that focuses on establishing long-term relationships with
+                            customers.
+                        </p>
+
+                        <div class="btn-wrapper">
+
+                            <a href="/Login,signup/login.html" class="btn btn-primary">Explore Now</a>
+
+                            <a href="index.html" class="btn btn-outline">Contact Us</a>
+
+                        </div>
+
+                    </div>
+
+                    <div class="hero-slider" data-slider>
+
+                        <div class="slider-inner">
+                            <ul class="slider-container" data-slider-container>
+
+                                <li class="slider-item">
+
+                                    <figure class="img-holder" style="--width: 575; --height: 550;">
+                                        <img src="home/images/pic-1.jpg" width="575" height="550" alt=""
+                                            class="img-cover">
+                                    </figure>
+
+                                </li>
+
+                                <li class="slider-item">
+
+                                    <div class="hero-card">
+                                        <figure class="img-holder" style="--width: 575; --height: 550;">
+                                            <img src="home/images/pic-2.jpg" width="575" height="550" alt="hero banner"
+                                                class="img-cover">
+                                        </figure>
+                                    </div>
+
+                                </li>
+
+                                <li class="slider-item">
+
+                                    <figure class="img-holder" style="--width: 575; --height: 550;">
+                                        <img src="home/images/pic-3.jpg" width="575" height="550" alt=""
+                                            class="img-cover">
+                                    </figure>
+
+                                </li>
+
+                            </ul>
+                        </div>
+
+                        <button class="slider-btn prev" aria-label="slide to previous" data-slider-prev>
+                            <ion-icon name="arrow-back"></ion-icon>
+                        </button>
+
+                        <button class="slider-btn next" aria-label="slide to next" data-slider-next>
+                            <ion-icon name="arrow-forward"></ion-icon>
+                        </button>
+
+                    </div>
+
+                </div>
+            </section>
+
+
+
+
+
+            <!-- 
+        - #SERVICE
+      -->
+
+            <section class="section service" aria-labelledby="service-label">
+                <div class="container">
+
+                    <p class="section-subtitle" id="service-label">What We Do?</p>
+
+                    <h2 class="h2 section-title">
+                        The service we offer is specifically designed to meet your needs.
+                    </h2>
+
+                    <ul class="grid-list">
+
+                        <li>
+                            <div class="service-card">
+
+                                <div class="card-icon">
+                                    <ion-icon name="call-outline" aria-hidden="true"></ion-icon>
+                                </div>
+
+                                <h3 class="h4 card-title">24/7 Support</h3>
+
+                                <p class="card-text">
+                                    We provide 24/7 assistance to our customers so you have aid all the time. The
+                                    customer can
+                                    contact our team anytime they want to using toll-free number.
+                                </p>
+
+                                <a href="#" class="btn-text">
+                                    <span class="span">Learn More</span>
+
+                                    <ion-icon name="arrow-forward-outline" aria-hidden="true"></ion-icon>
+                                </a>
+
+                            </div>
+                        </li>
+
+                        <li>
+                            <div class="service-card">
+
+                                <div class="card-icon">
+                                    <ion-icon name="shield-checkmark-outline" aria-hidden="true"></ion-icon>
+                                </div>
+
+                                <h3 class="h4 card-title">Secure Payments</h3>
+
+                                <p class="card-text">
+                                    Parkwithease provide many mode of payments like Debit Card, Debit Card, Slice and
+                                    Cash.
+                                    Payment through cryptocurrency is in progress.
+                                </p>
+
+                                <a href="#" class="btn-text">
+                                    <span class="span">Learn More</span>
+
+                                    <ion-icon name="arrow-forward-outline" aria-hidden="true"></ion-icon>
+                                </a>
+
+                            </div>
+                        </li>
+
+                        <li>
+                            <div class="service-card">
+
+                                <div class="card-icon">
+                                    <ion-icon name="cloud-download-outline" aria-hidden="true"></ion-icon>
+                                </div>
+
+                                <h3 class="h4 card-title">Updates</h3>
+
+                                <p class="card-text">
+                                    Our customers are notified about any updates or bug fixes to ensure that the
+                                    customers feels comfortable using the Parkwithease.
+
+                                </p>
+
+                                <a href="#" class="btn-text">
+                                    <span class="span">Learn More</span>
+
+                                    <ion-icon name="arrow-forward-outline" aria-hidden="true"></ion-icon>
+                                </a>
+
+                            </div>
+                        </li>
+
+                        <li>
+                            <div class="service-card">
+
+                                <div class="card-icon">
+                                    <ion-icon name="pie-chart-outline" aria-hidden="true"></ion-icon>
+                                </div>
+
+                                <h3 class="h4 card-title">Research</h3>
+
+                                <p class="card-text">
+                                    We research about the trends and make changes to ensure that our customers are
+                                    provided with the lates
+                                    technology out there.
+                                </p>
+
+                                <a href="#" class="btn-text">
+                                    <span class="span">Learn More</span>
+
+                                    <ion-icon name="arrow-forward-outline" aria-hidden="true"></ion-icon>
+                                </a>
+
+                            </div>
+                        </li>
+
+                    </ul>
+
+                </div>
+            </section>
+
+
+
+
+
+            <!-- 
+        - #ABOUT
+      -->
+
+            <section class="about" aria-labelledby="about-label">
+                <div class="container">
+
+                    <figure class="about-banner">
+                        <img src="images/png/logo-black.png" width="800" height="580" loading="lazy" alt="about banner"
+                            class="w-100">
+                    </figure>
+
+                    <div class="about-content">
+
+                        <p class="section-subtitle" id="about-label">Why Choose Us?</p>
+
+                        <h2 class="h2 section-title">
+                            We bring solutions to make life easier for our clients.
+                        </h2>
+
+                        <ul>
+
+                            <li class="about-item">
+                                <div class="accordion-card expanded" data-accordion>
+
+                                    <h3 class="card-title">
+                                        <button class="accordion-btn" data-accordion-btn>
+                                            <ion-icon name="chevron-down-outline" aria-hidden="true"
+                                                class="down"></ion-icon>
+
+                                            <spna class="span h5">Search and Availability</spna>
+                                        </button>
+                                    </h3>
+
+                                    <p class="accordion-content">
+                                        Users can search for parking spaces based on location, date, and time.
+                                        The system displays the available options with relevant details such as pricing,
+                                        distance from the desired location, and any additional amenities.
+                                    </p>
+
+                                </div>
+                            </li>
+
+                            <li class="about-item">
+                                <div class="accordion-card" data-accordion>
+
+                                    <h3 class="card-title">
+                                        <button class="accordion-btn" data-accordion-btn>
+                                            <ion-icon name="chevron-down-outline" aria-hidden="true"
+                                                class="down"></ion-icon>
+
+                                            <spna class="span h5">Booking and Reservation</spna>
+                                        </button>
+                                    </h3>
+
+                                    <p class="accordion-content">
+                                        Users can select a parking spot from the available
+                                        options and make a reservation by specifying the desired date and time. The
+                                        system should provide a confirmation of the booking along with any relevant
+                                        instructions or parking details.
+
+                                    </p>
+
+                                </div>
+                            </li>
+
+                            <li class="about-item">
+                                <div class="accordion-card" data-accordion>
+
+                                    <h3 class="card-title">
+                                        <button class="accordion-btn" data-accordion-btn>
+                                            <ion-icon name="chevron-down-outline" aria-hidden="true"
+                                                class="down"></ion-icon>
+
+                                            <spna class="span h5">Reviews and Ratings</spna>
+                                        </button>
+                                    </h3>
+
+                                    <p class="accordion-content">
+                                        Users can provide feedback and ratings for their parking
+                                        experiences, helping other users make informed decisions when choosing parking
+                                        spaces. This feature can contribute to maintaining a reliable and trustworthy
+                                        system
+                                    </p>
+
+                                </div>
+                            </li>
+
+                        </ul>
+
+                    </div>
+
+                </div>
+            </section>
+
+
+
+
+
+            <!-- 
+        - #FEATURE
+      -->
+
+            <section class="section feature" aria-labelledby="feature-label">
+                <div class="container">
+
+                    <figure class="feature-banner">
+                        <img src="home/images/pic-6.jpg" width="800" height="531" loading="lazy" alt="feature banner"
+                            class="w-100">
+                    </figure>
+
+                    <div class="feature-content">
+
+                        <p class="section-subtitle" id="feautre-label">Our Solutions</p>
+
+                        <h2 class="h2 section-title">
+                            We make your spending stress-free for you to have the perfect control.
+                        </h2>
+
+                        <p class="section-text">
+                            Parkwithease provide real-time updates on the availability of
+                            parking spaces. This includes updating the status of booked and occupied spots, so users can
+                            be assured that their reserved space will be available when they arrive.
+                        </p>
+
+                        <ul class="feature-list">
+
+                            <li>
+                                <div class="feature-card">
+
+                                    <div class="card-icon">
+                                        <ion-icon name="checkmark" aria-hidden="true"></ion-icon>
+                                    </div>
+
+                                    <span class="span">
+                                        Hassle-free parking experience.
+                                    </span>
+
+                                </div>
+                            </li>
+
+                            <li>
+                                <div class="feature-card">
+
+                                    <div class="card-icon">
+                                        <ion-icon name="checkmark" aria-hidden="true"></ion-icon>
+                                    </div>
+
+                                    <span class="span">
+                                        Facilitating online payments.
+                                    </span>
+
+                                </div>
+                            </li>
+
+                            <li>
+                                <div class="feature-card">
+
+                                    <div class="card-icon">
+                                        <ion-icon name="checkmark" aria-hidden="true"></ion-icon>
+                                    </div>
+
+                                    <span class="span">
+                                        Searching for available parking spaces.
+                                    </span>
+
+                                </div>
+                            </li>
+
+                            <li>
+                                <div class="feature-card">
+
+                                    <div class="card-icon">
+                                        <ion-icon name="checkmark" aria-hidden="true"></ion-icon>
+                                    </div>
+
+                                    <span class="span">
+                                        Making reservations.
+                                    </span>
+
+                                </div>
+                            </li>
+
+                        </ul>
+
+                    </div>
+
+                </div>
+            </section>
+
+
+
+
+
+            <!-- 
+        - #STATS
+      -->
+
+            <section class="stats" aria-label="our stats">
+                <div class="container">
+
+                    <ul class="stats-card has-bg-image" style="background-image: url('home/images/pic-4.jpg')">
+
+                        <li>
+                            <p class="card-text">
+                                <span class="h1">1</span>
+
+                                <spna class="span">Completed Projects</spna>
+                            </p>
+                        </li>
+
+                        <li>
+                            <p class="card-text">
+                                <span class="h1">777</span>
+
+                                <spna class="span">Happy Customers</spna>
+                            </p>
+                        </li>
+
+                        <li>
+                            <p class="card-text">
+                                <span class="h1">4</span>
+
+                                <spna class="span">Expert Employees</spna>
+                            </p>
+                        </li>
+
+                        <li>
+                            <p class="card-text">
+                                <span class="h1">1</span>
+
+                                <spna class="span">Awards Won</spna>
+                            </p>
+                        </li>
+
+                    </ul>
+
+                </div>
+            </section>
+
+
+
+
+
+            <!-- 
+        - #PROJECT
+      -->
+
+            <section class="section project" aria-labelledby="project-label">
+                <div class="container">
+
+                    <p class="section-subtitle" id="project-label">Case Studies</p>
+
+                    <h2 class="h2 section-title">
+                        Check out some of our Case Studies and Customer Editorials created by our very own team.
+                    </h2>
+
+                    <ul class="grid-list">
+
+                        <li>
+                            <div class="project-card">
+
+                                <figure class="card-banner img-holder" style="--width: 560; --height: 350;">
+                                    <img src="home/images/pic-3.jpg" width="560" height="350" loading="lazy"
+                                        alt="img cover" class="img-cover">
+                                </figure>
+
+                                <div class="card-content">
+
+                                    <h3 class="h3">
+                                        <a href="#" class="card-title">Limitation of Existing System
+                                    </h3>
+
+                                    <p class="card-text">
+                                        There are many types of systems which are available for parking
+                                        reservation, the problem is that those system can be only accessed by a
+                                        particular person or institution. The existing systems do not provide
+                                        information of the existing parkings lots available and fail in updating slots.
+                                        Authentication is also a major problem in the current existing systems.
+                                    </p>
+
+                                    <ul class="card-meta-list">
+
+                                        <li class="card-meta-item">
+                                            <ion-icon name="calendar-outline" aria-hidden="true"></ion-icon>
+
+                                            <time class="meta-text" datetime="2022-04-14">5 June 2023</time>
+                                        </li>
+
+                                        <li class="card-meta-item">
+                                            <ion-icon name="document-text-outline" aria-hidden="true"></ion-icon>
+
+                                            <span class="meta-text">Research</span>
+                                        </li>
+
+                                    </ul>
+
+                                </div>
+
+                            </div>
+                        </li>
+
+                        <li>
+                            <div class="project-card">
+
+                                <figure class="card-banner img-holder" style="--width: 560; --height: 350;">
+                                    <img src="home/images/pic-6.jpg" width="560" height="350" loading="lazy"
+                                        alt="image cover" class="img-cover">
+                                </figure>
+
+                                <div class="card-content">
+
+                                    <h3 class="h3">
+                                        <a href="#" class="card-title">User Feedback</a>
+                                    </h3>
+
+                                    <p class="card-text">
+                                        The users' feedback in version 1.0 highlights a few areas of improvement. User 1
+                                        suggests
+                                        adding a "Remember Me" option for login, which can enhance user experience by
+                                        eliminating the need to enter credentials repeatedly. User 2 points out the need
+                                        for a more
+                                        prominent button to check available parking spots, making it more intuitive for
+                                        users. User
+                                        3 identifies a specific error and suggests implementing error messages or
+                                        guidance to assist
+                                        users in troubleshooting
+                                    </p>
+
+                                    <ul class="card-meta-list">
+
+                                        <li class="card-meta-item">
+                                            <ion-icon name="calendar-outline" aria-hidden="true"></ion-icon>
+
+                                            <time class="meta-text" datetime="2022-03-29">12 Jun 2023</time>
+                                        </li>
+
+                                        <li class="card-meta-item">
+                                            <ion-icon name="document-text-outline" aria-hidden="true"></ion-icon>
+
+                                            <span class="meta-text">Customer's voice</span>
+                                        </li>
+
+                                    </ul>
+
+                                </div>
+
+                            </div>
+                        </li>
+
+                        <li>
+                            <div class="project-card">
+
+                                <figure class="card-banner img-holder" style="--width: 560; --height: 350;">
+                                    <img src="home/images/pic-7.jpg" width="560" height="350" loading="lazy" alt="cover"
+                                        class="img-cover">
+                                </figure>
+
+                                <div class="card-content">
+
+                                    <h3 class="h3">
+                                        <a href="#" class="card-title">Onboarding and Account Creation</a>
+                                    </h3>
+
+                                    <p class="card-text">
+                                        This product will be used by the user on certain occasions, and not frequently.
+                                        Therefore, it neither requires a long and complicated onboarding nor an
+                                        extensive user profile. We created a single step onboarding where the user can
+                                        login through their profiles (fast and easy) and finish up by
+                                        filling in their vehicle details.
+                                    </p>
+
+                                    <ul class="card-meta-list">
+
+                                        <li class="card-meta-item">
+                                            <ion-icon name="calendar-outline" aria-hidden="true"></ion-icon>
+
+                                            <time class="meta-text" datetime="2022-02-26">1 June 2023</time>
+                                        </li>
+
+                                        <li class="card-meta-item">
+                                            <ion-icon name="document-text-outline" aria-hidden="true"></ion-icon>
+
+                                            <span class="meta-text">Account creation</span>
+                                        </li>
+
+                                    </ul>
+
+                                </div>
+
+                            </div>
+                        </li>
+
+                    </ul>
+
+                </div>
+            </section>
+
+
+
+
+
+            <!-- 
+        - #CTA
+      -->
+
+            <section class="cta" aria-label="call to action">
+                <div class="container">
+
+                    <h2 class="h2 section-title">
+                        Join Parkwithease and enjoy the Hassle-free parking solution.
+                    </h2>
+
+
+                </div>
+            </section>
+
+        </article>
+    </main>
+
+
+
+
+
+    <!-- 
+    - #FOOTER
+  -->
+
+    <footer class="footer">
+        <div class="container grid-list">
+
+            <div class="footer-brand">
+
+                <a href="#" class="logo">
+                    <img src="images/png/logo-no-background.png" width="90" height="40" alt="logo home">
+                </a>
+
+                <p class="footer-text">
+                    &copy; 2023 Parkwithease. <br> All rights reserved.
+                </p>
+
+                <ul class="social-list">
+
+                    <li>
+                        <a href="#" class="social-link">
+                            <ion-icon name="logo-facebook"></ion-icon>
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#" class="social-link">
+                            <ion-icon name="logo-twitter"></ion-icon>
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#" class="social-link">
+                            <ion-icon name="logo-dribbble"></ion-icon>
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#" class="social-link">
+                            <ion-icon name="logo-instagram"></ion-icon>
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#" class="social-link">
+                            <ion-icon name="logo-youtube"></ion-icon>
+                        </a>
+                    </li>
+
+                </ul>
+
+            </div>
+
+            <ul class="footer-list">
+
+                <li>
+                    <p class="h4 footer-list-title">Get in Touch</p>
+                </li>
+
+                <li>
+                    <address class="footer-text">
+                        L.J.I.E.T, LJ University, 388210, Ahmedabad.
+                    </address>
+                </li>
+
+                <li>
+                    <a href="mailto:parkwithease@gmail.com" class="footer-link">parkwithease@gmail.com</a>
+                </li>
+
+                <li>
+                    <a href="tel:7622-039-360" class="footer-link"> (+91) 7622-039-360</a>
+                </li>
+
+            </ul>
+
+            <ul class="footer-list">
+
+                <li>
+                    <p class="h4 footer-list-title">Learn More</p>
+                </li>
+
+                <li>
+                    <a href="#" class="footer-link">About Us</a>
+                </li>
+
+                <li>
+                    <a href="#" class="footer-link">Our Story</a>
+                </li>
+
+                <li>
+                    <a href="#" class="footer-link">Dashboard</a>
+                </li>
+
+                <li>
+                    <a href="#" class="footer-link">Terms of Use</a>
+                </li>
+
+                <li>
+                    <a href="#" class="footer-link">Privacy Policy</a>
+                </li>
+
+            </ul>
+
+            <div class="footer-list">
+
+                <p class="h4 footer-list-title">Our Newsletter</p>
+
+                <p class="footer-text">
+                    Subscribe to our newsletter to get our news & deals delivered to you.
+                </p>
+
+                <form action="" class="input-wrapper">
+                    <input type="email" name="email_address" placeholder="Email Address" required class="input-field">
+
+                    <button type="submit" class="submit-btn">Join</button>
+                </form>
+
+            </div>
+
+        </div>
+    </footer>
+
+
+
+
+
+    <!-- 
+    - custom js link
+  -->
+    <script src="script.js"></script>
+
+    <!-- 
+    - ionicon
+  -->
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+</body>
+
+</html>
